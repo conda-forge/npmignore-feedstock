@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://registry.npmjs.org/npmignore/-/npmignore-${{ version }}.tgz
+  url: https://registry.npmjs.org/npmignore/-/npmignore-{{ version }}.tgz
   sha256: 55427248e9d6ddf790e130f4b661cfbf36298c6a6e150aa1636e2ea7118ba983
 
 build:
