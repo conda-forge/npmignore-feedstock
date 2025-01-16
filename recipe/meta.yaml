@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/ljharb/npmignore/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: 33922f1f0b6eaeb5aedffd2f460c4601da389da357dc1ae4d260b5e7c68c1c50
+  url: https://registry.npmjs.org/npmignore/-/npmignore-${{ version }}.tgz
+  sha256: 55427248e9d6ddf790e130f4b661cfbf36298c6a6e150aa1636e2ea7118ba983
 
 build:
-  number: 1
+  number: 2
+  noarch: generic
 
 requirements:
   build:
     - nodejs
-  host:
-    - nodejs
-    - yarn <2
+    - pnpm
+    - pnpm-licenses
   run:
     - nodejs
 
@@ -30,9 +30,10 @@ about:
   license: MIT
   license_file:
     - LICENSE
-    - ThirdPartyLicenses.txt
+    - third-party-licenses.txt
   summary: 'Command line tool for creating or updating a .npmignore file based on .gitignore'
 
 extra:
   recipe-maintainers:
+    - danielnachun
     - xhochy
