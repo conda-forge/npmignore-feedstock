@@ -1,5 +1,5 @@
 {% set name = "npmignore" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://registry.npmjs.org/npmignore/-/npmignore-{{ version }}.tgz
-  sha256: 55427248e9d6ddf790e130f4b661cfbf36298c6a6e150aa1636e2ea7118ba983
+  sha256: 23974a4b78bb822a67698d18bf208f41dbb610592b53ed6f720b1529841a968f
 
 build:
-  number: 2
+  number: 0
   noarch: generic
 
 requirements:
