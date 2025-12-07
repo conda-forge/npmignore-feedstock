@@ -1,0 +1,41 @@
+schema_version: 1
+
+context:
+  version: 0.3.2
+
+package:
+  name: npmignore
+  version: ${{ version }}
+
+source:
+  url: https://registry.npmjs.org/npmignore/-/npmignore-${{ version }}.tgz
+  sha256: 23974a4b78bb822a67698d18bf208f41dbb610592b53ed6f720b1529841a968f
+
+build:
+  number: 1
+  noarch: generic
+
+requirements:
+  build:
+    - nodejs
+    - pnpm
+    - pnpm-licenses
+  run:
+    - nodejs
+
+tests:
+  - script:
+      - npmignore --help
+
+about:
+  license: MIT
+  license_file:
+    - LICENSE
+    - third-party-licenses.txt
+  summary: Command line tool for creating or updating a .npmignore file based on .gitignore
+  homepage: https://github.com/ljharb/npmignore
+
+extra:
+  recipe-maintainers:
+    - danielnachun
+    - xhochy
