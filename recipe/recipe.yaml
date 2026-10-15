@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "0.3.5"
+  version: "0.3.6"
 
 package:
   name: npmignore
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://registry.npmjs.org/npmignore/-/npmignore-${{ version }}.tgz
-  sha256: c462f99b58a4c6d33f72d468899513cccf28136170116b685018e7165cde17d2
+  sha256: c9f0e9e51e27417aae0d4f4ad5372776508d733349df0cae7451a2418ecc8952
 
 build:
   number: 0
